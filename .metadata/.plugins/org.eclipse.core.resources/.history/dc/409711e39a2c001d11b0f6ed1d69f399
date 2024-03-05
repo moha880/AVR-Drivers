@@ -1,0 +1,27 @@
+/*
+ * ADC_cfg.h
+ *
+ *  Created on: Aug 25, 2022
+ *      Author: Ibrahem
+ */
+
+#ifndef MCAL_ADC_ADC_CFG_H_
+#define MCAL_ADC_ADC_CFG_H_
+
+/**
+ * OPTIONS:
+ *
+ * 		INTERNAL_REF
+ * 		AVCC
+ * 		AREF
+ *
+ */
+#define ADC_REF_VOLT	AVCC
+
+
+
+
+#define ADC_PRESCALER 0b010
+
+
+#endif /* MCAL_ADC_ADC_CFG_H_ */

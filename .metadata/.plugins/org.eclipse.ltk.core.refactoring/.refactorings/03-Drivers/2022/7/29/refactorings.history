@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;03-Drivers/MECAL&apos; to &apos;MCAL&apos;" description="Rename resource &apos;MECAL&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="MECAL" name="MCAL" stamp="1657979229644" updateReferences="true"/>
+</session>

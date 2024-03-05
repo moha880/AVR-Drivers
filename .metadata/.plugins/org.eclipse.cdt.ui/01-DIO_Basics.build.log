@@ -1,0 +1,9 @@
+20:02:43 **** Incremental Build of configuration Release for project 01-DIO_Basics ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+make: *** [main.o] Error -1073741502
+
+20:03:05 Build Finished (took 21s.676ms)
+

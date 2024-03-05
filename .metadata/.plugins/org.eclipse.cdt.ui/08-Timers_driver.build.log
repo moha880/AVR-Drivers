@@ -1,0 +1,20 @@
+17:47:09 **** Incremental Build of configuration Release for project 08-Timers_driver ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 08-Timers_driver.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2828 bytes (8.6% Full)
+(.text + .data + .bootloader)
+
+Data:         38 bytes (1.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+17:47:09 Build Finished (took 557ms)
+

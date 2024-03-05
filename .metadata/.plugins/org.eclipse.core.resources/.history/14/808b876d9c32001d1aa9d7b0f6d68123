@@ -1,0 +1,121 @@
+/*
+ * main.c
+ *
+ *  Created on: Jun 2, 2022
+ *      Author: mazen
+ */
+
+#include "../LIB/STD_TYPES.h"
+#include"../MCAL/DIO/DIO_int.h"
+#include"../HAL/LCD/LCD_int.h"
+#include"../MCAL/TIMERS/TIMERS_int.h"
+#include"../MCAL/GIE/GIE_int.h"
+
+#include <util/delay.h>
+
+volatile u8 Reading_Flag=0;
+volatile u16 PeriodicTime;
+volatile u16 ONTime;
+
+
+
+void toggle(void){
+	MDIO_vTogPinVal(DIO_PORTA,DIO_PIN0);
+}
+void ReadPwm(void){
+	static u8 counter =0;
+	static u16 TimeReadings[3];
+
+			counter++;
+	switch(counter)
+	{
+	case 1:
+		TimeReadings[counter-1]=MTIMERS_u16GetCapturedTme();
+		MTIMERS_vSetIcuTrigger(ICU_Rising);
+		break;
+
+	case 2:
+		TimeReadings[counter-1]=MTIMERS_u16GetCapturedTme();
+		MTIMERS_vSetIcuTrigger(ICU_Falling);
+		PeriodicTime=TimeReadings[1]-TimeReadings[0];
+		break;
+
+	case 3:
+		TimeReadings[counter-1]=MTIMERS_u16GetCapturedTme();
+		MTIMERS_vSetIcuTrigger(ICU_Rising);
+		MTIMERS_vDisableInterrupt(0);
+		ONTime=TimeReadings[2]-TimeReadings[1];
+		counter =0;
+
+
+
+
+		Reading_Flag=1;
+
+
+		break;
+
+
+
+
+	}
+
+
+
+}
+
+int main(void)
+{
+
+	MDIO_vSetPinDIR(DIO_PORTB,DIO_PIN3,DIO_OUTPUT);
+	MTIMERS_vSetCallback(ReadPwm);
+	MTIMERS_vInit();
+	MTIMERS_vStartTimer();
+	HLCD_vInit();
+	u32 angle =54;
+	MTIMERS_vSetCompareValue(TIMER_1A,((25*angle)/36)+125);
+
+
+
+
+	MGIE_vEnableGlobalInterrupt();
+//	MTIMERS_vSetInterval_Asynch(2000,toggle);
+//	MTIMERS_vSetInterval_CTC_Asynch(2000,250,toggle);
+	while(1)
+	{
+	//	for(u8 i=0; i<254; i++)
+//		{
+		//	MTIMERS_vSetCompareValue(TIMER0,i);
+			//_delay_ms(100);
+//		}
+//		// fade out
+//		for(u8 i=0; i<254; i++)
+//		{
+//			MTIMERS_vSetCompareValue(TIMER0,255-i);
+//			_delay_ms(100);
+//		}
+
+		if(Reading_Flag)
+		{
+			Reading_Flag=0;
+			HLCD_vSendCommand(LCD_CLEAR);
+			HLCD_vSetCursorPosition(0,0);
+			HLCD_vPrintNumber(ONTime);
+			HLCD_vSetCursorPosition(1,0);
+			HLCD_vPrintNumber(PeriodicTime);
+
+			MTIMERS_vEnableInterrupt();
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

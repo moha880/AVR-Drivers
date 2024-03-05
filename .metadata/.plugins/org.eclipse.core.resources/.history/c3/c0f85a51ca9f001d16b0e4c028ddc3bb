@@ -1,0 +1,42 @@
+/*
+ * main.c
+ *
+ *  Created on: Jun 2, 2022
+ *      Author: mazen
+ */
+
+#include "../LIB/STD_TYPES.h"
+#include "../MCAL/DIO/DIO_int.h"
+#include "../MCAL/SPI/SPI_int.h"
+
+int main(void)
+{
+	MDIO_vSetPinDIR(DIO_PORTA,DIO_PIN0,DIO_OUTPUT);
+	MSPI_vInit();
+
+	u8 c;
+	c=MSPI_u8Transmit__receive('M');
+
+
+
+
+		if (c=='M'){
+	MDIO_vSetPinVal(DIO_PORTA,DIO_PIN0,DIO_HIGH);
+		}
+	MDIO_vSetPinVal(DIO_PORTA,DIO_PIN0,DIO_LOW);
+	while(1)
+	{
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

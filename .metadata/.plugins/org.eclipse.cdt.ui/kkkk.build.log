@@ -1,0 +1,11 @@
+16:22:47 **** Incremental Build of configuration Debug for project kkkk ****
+make all 
+Building target: kkkk.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,kkkk.map -mmcu=atmega32 -o "kkkk.elf"  ./MCAL/GIE/GIE_prg.o  ./MCAL/EXTI/EXTI_prg.o  ./MCAL/DIO/DIO_prg.o  ./APP/main.o   
+./APP/main.o: In function `__vector_1':
+../APP/main.c:20: undefined reference to `MGIE_vEnableGlobalInterrupt'
+make: *** [kkkk.elf] Error 1
+
+16:22:47 Build Finished (took 763ms)
+

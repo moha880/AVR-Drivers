@@ -1,0 +1,20 @@
+00:54:26 **** Incremental Build of configuration Debug for project WatchDogTimer ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 WatchDogTimer.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10266 bytes (31.3% Full)
+(.text + .data + .bootloader)
+
+Data:         34 bytes (1.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+00:54:27 Build Finished (took 1s.164ms)
+

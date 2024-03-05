@@ -1,0 +1,54 @@
+/*
+ * ADC_prg.c
+ *
+ *  Created on: Aug 25, 2022
+ *      Author: Ibrahem
+ */
+
+#include "../../LIB/STD_TYPES.h"
+#include "../../LIB/BIT_MATH.h"
+
+#include "ADC_int.h"
+#include "ADC_cfg.h"
+#include "ADC_prv.h"
+
+
+void MADC_vInit(void)
+{
+	/* 1- referance voltage selection */
+	CLR_BIT(ADMUX,REFS1);
+	SET_BIT(ADMUX,REFS0);
+	/* 2- data direction adjustment */
+	CLR_BIT(ADMUX,ADLAR);
+	/* 3- prescaler bits selection */
+	ADCSRA = (ADCSRA & 0XF8 ) | ( ADC_PRESCALER );
+	/* 4- auto trigger enable*/
+	/* 4a auto trigger source*/
+	CLR_BIT(ADCSRA,ADATE);
+
+	/* 5-interrupt enable disable */
+	CLR_BIT(ADCSRA,ADIE);
+
+	/*  6-enable adc peripheral*/
+	SET_BIT(ADCSRA,ADEN);
+
+
+}
+u16 MADC_u16AnalogRead(u8 A_u8ChannelNo ){
+
+	/*1- select channel */
+	ADMUX=(ADMUX & 0XE0) | (A_u8ChannelNo & 0X07);  //(A_u8ChannelNo & 0X1F)      DIFFERENTIAL
+	/*2- start conversion */
+	SET_BIT(ADCSRA,ADSC);
+	/*3- poll on flag */
+	while (GET_BIT(ADCSRA,ADIF) != 1){}
+	/*4- clear flag */
+	SET_BIT(ADCSRA,ADIF);
+
+	/*5- return adc data */
+
+	return ADC;
+
+
+}
+

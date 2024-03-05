@@ -1,0 +1,36 @@
+/*
+ * TIMERS_prv.h
+ *
+ *  Created on: Jul 19, 2022
+ *      Author: mazen
+ */
+
+#ifndef MCAL_TIMERS_TIMERS_PRV_H_
+#define MCAL_TIMERS_TIMERS_PRV_H_
+
+
+
+#define Tim_ps_8 	0b010
+
+
+
+#define TOIE0		0
+#define OCIE0		1
+
+#define WGM00		6
+#define WGM01		3
+#define COM00		4
+#define COM01		5
+#define FOC0		7
+
+
+
+
+#define TIFR		*((volatile u8*)(0x58))
+#define TIMSK		*((volatile u8*)(0x59))
+
+#define TCCR0		*((volatile u8*)(0x50))
+#define TCNT0		*((volatile u8*)(0x52))
+#define OCR0		*((volatile u8*)(0x50))
+
+#endif /* MCAL_TIMERS_TIMERS_PRV_H_ */

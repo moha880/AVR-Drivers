@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;04-LCD_driver/HAL/LCD/LCD_prg.h&apos; to &apos;LCD_prg.c&apos;" description="Rename resource &apos;LCD_prg.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="HAL/LCD/LCD_prg.h" name="LCD_prg.c" stamp="1658409721237" updateReferences="true"/>
+</session>

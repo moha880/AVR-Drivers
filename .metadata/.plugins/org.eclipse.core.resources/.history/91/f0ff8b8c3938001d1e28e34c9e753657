@@ -1,0 +1,18 @@
+/*
+ * UART_prv.h
+ *
+ *  Created on: Sep 18, 2022
+ *      Author: Ibrahem
+ */
+
+#ifndef MCAL_UART_UART_PRV_H_
+#define MCAL_UART_UART_PRV_H_
+
+#define UDR			*((volatile u8*)(ox2C))
+#define UCSRA		*((volatile u8*)(ox2B))
+#define UCSRB		*((volatile u8*)(ox2A))
+#define UCSRC		*((volatile u8*)(ox40))
+#define UBRRL		*((volatile u8*)(ox29))
+#define UBRRH		*((volatile u8*)(ox40))
+
+#endif /* MCAL_UART_UART_PRV_H_ */

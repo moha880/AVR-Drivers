@@ -1,0 +1,13 @@
+/*
+ * ADC_prv.h
+ *
+ *  Created on: Sep 4, 2022
+ *      Author: Ibrahem
+ */
+
+#ifndef MCAL_ADC_ADC_PRV_H_
+#define MCAL_ADC_ADC_PRV_H_
+
+
+
+#endif /* MCAL_ADC_ADC_PRV_H_ */

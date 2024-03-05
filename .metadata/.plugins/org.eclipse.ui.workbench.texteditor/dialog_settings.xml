@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item value="452" key="DIALOG_X_ORIGIN"/>
+		<item value="247" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="&#x0D;&#x0A;void adc_isr(u16 A__u16ADCData)&#x0D;&#x0A;{&#x0D;&#x0A;&#x09;adc_readings[adc_idx]= A__u16ADCData;&#x0D;&#x0A;&#x09;adc_idx++;&#x0D;&#x0A;&#x0D;&#x0A;&#x09;/*you can change the channel to read many readings*/&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;}&#x0D;&#x0A;" key="selection"/>
+		<list key="findhistory">
+			<item value="&#x0D;&#x0A;void adc_isr(u16 A__u16ADCData)&#x0D;&#x0A;{&#x0D;&#x0A;&#x09;adc_readings[adc_idx]= A__u16ADCData;&#x0D;&#x0A;&#x09;adc_idx++;&#x0D;&#x0A;&#x0D;&#x0A;&#x09;/*you can change the channel to read many readings*/&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;}&#x0D;&#x0A;"/>
+			<item value="&#x09;u8 steps[]={9,1,3,2,6,4,12,8};"/>
+			<item value="&#x09;MDIO_vSetPinDIR(DIO_PORTA,DIO_PIN0,DIO_OUTPUT);"/>
+			<item value="for (u8 L_u8Idx=0 ; L_u8Idx&lt;8 ; L_u8Idx++)"/>
+			<item value="1  set cgram address"/>
+			<item value=""/>
+		</list>
+	</section>
+</section>

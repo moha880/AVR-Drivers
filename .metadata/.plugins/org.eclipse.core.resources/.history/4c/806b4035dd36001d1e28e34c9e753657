@@ -1,0 +1,13 @@
+/*
+ * UART_prv.h
+ *
+ *  Created on: Sep 18, 2022
+ *      Author: Ibrahem
+ */
+
+#ifndef MCAL_UART_UART_PRV_H_
+#define MCAL_UART_UART_PRV_H_
+
+
+
+#endif /* MCAL_UART_UART_PRV_H_ */

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1661002617662_5" label="new" name="new">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/09-UART" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/RemoteSystemsTempFiles" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/08-Timers_driver" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/05-Motors" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Calculator" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/WatchDogTimer" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/02-keypad" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/01--DIO_Basics" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Timer" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/03-Drivers" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/04-LCD_driver" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/06-EXTI-drivers" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/07-ADC_driver" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1657730890366_0" label="Window Working Set" name="Aggregate for window 1657730890366"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1657734720222_1" label="Window Working Set" name="Aggregate for window 1657734720222"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1657978014785_2" label="Window Working Set" name="Aggregate for window 1657978014785"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1658092203168_3" label="Window Working Set" name="Aggregate for window 1658092203168"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1659634017558_4" label="Window Working Set" name="Aggregate for window 1659634017558"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1662432370033_6" label="Window Working Set" name="Aggregate for window 1662432370033"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1663273543672_7" label="Window Working Set" name="Aggregate for window 1663273543672"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1663367693944_8" label="Window Working Set" name="Aggregate for window 1663367693944"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1663448348597_9" label="Window Working Set" name="Aggregate for window 1663448348597"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1663932181003_10" label="Window Working Set" name="Aggregate for window 1663932181003"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1694639404749_11" label="Window Working Set" name="Aggregate for window 1694639404749"/>
+<mruList name="new"/>
+</workingSetManager>
